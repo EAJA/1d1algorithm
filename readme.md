@@ -1,5 +1,16 @@
 ## 1 day 1 algoritm solve
 
-1. 궁금한거
-2. Programmars
-3. Beakjoon
+
+Toy
+
+[Prgrammars.Lv1][lv1link]
+
+[lv1link]: https://github.com/EAJA/1d1algorithm/tree/master/Progrmmars/Lv1
+
+[Prgrammars.Lv2][lv2link]
+
+[lv2link]: https://github.com/EAJA/1d1algorithm/tree/master/Progrmmars/Lv2
+
+[BaekJoon][blink]
+
+[blink]: https://github.com/EAJA/1d1algorithm
