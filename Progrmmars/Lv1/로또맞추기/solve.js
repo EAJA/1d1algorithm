@@ -15,23 +15,22 @@ function solution(lottos, win_nums) {
     zeroCount.length === 0 && highest.length === 0 ? answer.push(6) : answer.push(7-(zeroCount.length+highest.length));
     highest.length === 0 ? answer.push(6) : answer.push(7-highest.length);
     return answer;
-  }
+}
   
-  function solution(lottos, win_nums) {
-    const answer = [];
-    const min = lottos.filter(n => win_nums.includes(n)).length;
-    const max = lottos.filter(n => n === 0).length + min;
-  
-    max > 1 ? answer.push(7 - max) : answer.push(6);
-    min > 1 ? answer.push(7 - min) : answer.push(6);
-  
-    return answer;
-  }
-  
-  /* 알고리즘 생각을 더 하자
-  코드가 너무 지저분하다
-  포함되는거만 필터로 배열 만들면 되는데
-  concat 을 쓸데없이 써서
-  중복값 제거로 한계단이 더해졌다
-  메소드를 여러가지 외우는게 필요한거같다 */
-  // - - - - - - - - - - - - - - - - - - - - - - - - - -
+function solution(lottos, win_nums) {
+  const answer = [];
+  const min = lottos.filter(n => win_nums.includes(n)).length;
+  const max = lottos.filter(n => n === 0).length + min;
+
+  max > 1 ? answer.push(7 - max) : answer.push(6);
+  min > 1 ? answer.push(7 - min) : answer.push(6);
+
+  return answer;
+}
+
+/* 코드가 너무 지저분하다
+포함되는거만 필터로 배열 만들면 되는데
+concat 을 왜썼지
+중복값 제거로 한계단이 더해졌다
+자주쓰는 메소드를 여러가지 외우는게 필요한거같다 */
+// - - - - - - - - - - - - - - - - - - - - - - - - - -

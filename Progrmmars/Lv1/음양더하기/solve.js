@@ -9,6 +9,5 @@ function solution(absolutes, signs) {
     }
     return answer;
   }
-  //쉬웠는데 코드를 한줄로 줄여보자
-  //reduce 사용하면 될거같은데
+  //reduce 사용하면 줄어들거 같은데 -> 그게그거임
   // - - - - - - - - - - - - - - - - - - - - - - - - - -

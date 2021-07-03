@@ -1,5 +1,4 @@
-//! 프로그래머스 - 시저암호
-//  - - - - - - - - - - - - - - - - - - - - - - - - - -
+```js
 function solution(s, n) {
     let answer = s.split('').map(a => {
         let cd = a.charCodeAt();
@@ -13,4 +12,4 @@ function solution(s, n) {
     })
     return answer.join('');
 }
-  //  - - - - - - - - - - - - - - - - - - - - - - - - - -
+```

@@ -1,3 +1,4 @@
+```js
 function solution(left, right) {
     let answer = 0;
     while(left <= right){
@@ -6,3 +7,4 @@ function solution(left, right) {
     }
     return answer;
 }
+```
