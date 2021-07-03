@@ -4,9 +4,7 @@ function solution(w, h) {
         h = w;
         w = answer;
         answer = 0;        
-    } 
-    // 소수점에서 오류나는거 같아서
-    // y=x 대칭시켜줌
+    } //y=x 대칭
     var answer = 0;
     let lastH = h;
     let nowH = 0;
@@ -17,5 +15,3 @@ function solution(w, h) {
     }
     return w * h - answer;
 }
-
-//6번 빼고 다 통과
