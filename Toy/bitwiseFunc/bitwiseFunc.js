@@ -77,4 +77,3 @@ function bitwiseXOR(n1, n2) {
 
   return parseInt(resultBitwiseXOR,2);
 }
-// & | ^ 차이 확인

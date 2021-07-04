@@ -1,7 +1,9 @@
 ## 1 day 1 algoritm solve
 
 
-Toy
+[Toy][lv1link]
+
+[lv1link]: https://github.com/EAJA/1d1algorithm/tree/master/Toy
 
 [Prgrammars.Lv1][lv1link]
 
