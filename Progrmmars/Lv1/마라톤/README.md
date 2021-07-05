@@ -9,7 +9,6 @@ function solution(participant, completion) {
           answer += equal;
       }
   }
-  console.log(participant);
   for(let i = 0 ; i<participant.length ; i++){
       if(!completion.includes(participant[i])){
           answer += participant[i];
