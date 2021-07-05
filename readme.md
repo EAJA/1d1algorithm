@@ -1,5 +1,4 @@
-## 1 day 1 algoritm solve
-
+## 1 day 1 algoritm
 
 [Toy][lv1link]
 
