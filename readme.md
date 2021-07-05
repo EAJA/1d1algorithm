@@ -1,8 +1,8 @@
 ## 1 day 1 algoritm
 
-[Toy][lv1link]
+[Toy][toylink]
 
-[lv1link]: https://github.com/EAJA/1d1algorithm/tree/master/Toy
+[toylink]: https://github.com/EAJA/1d1algorithm/tree/master/Toy
 
 [Prgrammars.Lv1][lv1link]
 
