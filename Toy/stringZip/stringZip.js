@@ -16,3 +16,5 @@ function compressString(str) {
     }
     return zipStr.join('');
 }
+
+//스트링 안자르고 할수있지않을까?
