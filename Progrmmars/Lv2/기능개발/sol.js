@@ -21,8 +21,3 @@ function solution(progresses, speeds) {
     }
     return answer;
 }
-
-let a = [93, 30, 55];
-let b = [1, 30, 5];
-
-solution(a,b);
