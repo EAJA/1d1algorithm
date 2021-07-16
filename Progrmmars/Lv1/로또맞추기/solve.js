@@ -34,3 +34,12 @@ concat 을 왜썼지
 중복값 제거로 한계단이 더해졌다
 자주쓰는 메소드를 여러가지 외우는게 필요한거같다 */
 // - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+function solution(lottos, win_nums) {
+  var answer = [0,0];
+  for(let i in lottos){
+      if(win_nums.includes(lottos[i])) answer[0]++;
+  }
+  answer[1] = answer[0] + lottos.filter(a => a === 0).length;
+  return [7-answer[1] === 7 ? 6 : 7-answer[1],7-answer[0] === 7 ? 6 : 7-answer[0]];
+}

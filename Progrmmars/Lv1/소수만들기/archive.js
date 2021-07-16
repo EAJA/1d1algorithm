@@ -37,8 +37,7 @@ const getCombinations = (arr, selectNumber) => {
     }
     return result;
   }
-  
-  let arr = [1,2,7,6,4];
-  console.log(solution(arr));
   // - - - - - - - - - - - - - - - - - - - - - - - - - -
   //! 효율성 탈락
+
+  //문제 바뀜
