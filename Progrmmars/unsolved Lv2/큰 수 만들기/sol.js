@@ -1,4 +1,4 @@
-// 스택으로 해보기
+// 스택
 function solution(number, k) {
 
     let result = [number[0]];
