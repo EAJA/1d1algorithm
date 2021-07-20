@@ -2,17 +2,17 @@
 
 ```js
 function comb(chosen, len) {
-        let result = Array();
-        let f = (str, lastIdx) => {
-            if (str.length === len) {
-                result.push(str);
-                return;
-            }
-            for (let i = lastIdx + 1; i < chosen.length; i++) {
-                f(str + chosen[i], i);
-            }
+    let result = Array();
+    let f = (str, lastIdx) => {
+        if (str.length === len) {
+            result.push(str);
+            return;
         }
-        f("", -1);
-        return result;
+        for (let i = lastIdx + 1; i < chosen.length; i++) {
+            f(str + chosen[i], i);
+        }
     }
+    f("", -1);
+    return result;
+}
 ```
