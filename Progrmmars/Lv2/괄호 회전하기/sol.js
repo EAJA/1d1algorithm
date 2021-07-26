@@ -1,5 +1,5 @@
 function solution(s) {
-    let rhkfgh = {
+    let bracket = {
         ')': '(',
         '}': '{',
         ']': '['
@@ -7,9 +7,9 @@ function solution(s) {
     function isCorrect(str) {
         const stack = [];
         for (let i = 0; i < str.length; i++) {
-            if (rhkfgh[str[i]]) stack.push(str[i]);
+            if (bracket[str[i]] === undefined) stack.push(str[i]);
             else {
-                if (stack[stack.length - 1] !== rhkfgh[str[i]]) return false;
+                if (stack[stack.length - 1] !== bracket[str[i]]) return false;
                 stack.pop();
             }
         }
