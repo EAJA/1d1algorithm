@@ -1,4 +1,5 @@
 ## 순열 n 개중 r 개 뽑아서 줄세우기 / 순서 ㅇ
+
 ```js
 function nPr(arr, len) {
     let result = new Array();
@@ -13,3 +14,4 @@ function nPr(arr, len) {
     return result;
 }
 ```
+issue : 재귀써서 10개이상 쓰면 콜스택 터짐

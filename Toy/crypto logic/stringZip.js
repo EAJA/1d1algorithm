@@ -1,4 +1,4 @@
-function compressString(str) {
+function stringZip(str) {
     let zipStr = new Array();
     let i = 0;
     while(str.length > 0){
