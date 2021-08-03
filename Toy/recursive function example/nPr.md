@@ -1,5 +1,6 @@
 ## 순열 n 개중 r 개 뽑아서 줄세우기 / 순서 ㅇ
 
+n개 중 r개
 ```js
 function nPr(arr, len) {
     let result = new Array();
@@ -14,4 +15,22 @@ function nPr(arr, len) {
     return result;
 }
 ```
-issue : 재귀써서 10개이상 쓰면 콜스택 터짐
+  
+<br/>
+  
+모든 경우
+```js
+let result = [];
+
+const nPall = (now, arr) => {
+    arr.forEach((el, idx, cArr) => {
+        let cur = now + el;
+        result.push(cur);
+        let newArr = cArr.slice();
+        newArr.splice(idx ,1);
+        nPall(cur, newArr);
+    });
+}
+
+nPall('', arr);
+```
