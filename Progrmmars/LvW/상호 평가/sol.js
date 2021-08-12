@@ -2,14 +2,6 @@ function solution(scores) {
     var answer = '';
     let tmp;
 
-    const grade = (num) => {
-        if (num >= 90) return 'A';
-        else if (num >= 80) return 'B';
-        else if (num >= 70) return 'C';
-        else if (num >= 50) return 'D';
-        else return 'F';
-    }
-
     for (let i = 0; i < scores.length; i++) {
         let cur = [];
 
@@ -28,7 +20,7 @@ function solution(scores) {
         }
 
         let len = cur.length;
-        answer += grade(cur.reduce((a, b) => a + b) / len);
+        answer += "FDDCBAA"[Math.max(parseInt(s.reduce((a, b) => a + b) / len / 10) - 4, 0)];
     }
 
     return answer;

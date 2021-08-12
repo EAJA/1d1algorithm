@@ -126,7 +126,7 @@ function quickSort(arr, func = a => a, left = 0, right = arr.length - 1) {
         return;
     }
 
-    function partition(arr, left, right) {
+    function getPartition(arr, left, right) {
         const pivot = arr[Math.floor((left + right) / 2)];
 
         while (left <= right) {
@@ -145,7 +145,7 @@ function quickSort(arr, func = a => a, left = 0, right = arr.length - 1) {
         return left;
     }
 
-    const partition = partition(arr, left, right);
+    const partition = getPartition(arr, left, right);
     quickSort(arr, func, left, partition - 1);
     quickSort(arr, func, partition, right);
 
