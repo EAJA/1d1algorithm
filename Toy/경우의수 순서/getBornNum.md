@@ -4,8 +4,11 @@
 function getBornNum(N, K) {
     // 팩토리얼을 구하기 위한 함수
     function fac(p) {
-        if (p === 1) return 1;
-        return p * fac(p - 1);
+        let result = 1;
+        for(let i = p ; i > 1 ; i--){
+            result *= i;
+        }
+        return result;
     }
 
     let arr = [];
