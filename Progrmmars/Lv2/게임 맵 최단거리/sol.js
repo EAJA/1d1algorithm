@@ -2,24 +2,19 @@ function solution(maps) {
     const maxY = maps.length;
     const maxX = maps[0].length;
 
-    const 다 = [-1, 0, 1, 0];
-    const 음 = [0, 1, 0, -1];
-
-    let q = [
-        [0, 0]
-    ];
     const visited = Array.from(Array(maxY), () => new Array(maxX).fill(false));
     const distance = Array.from(Array(maxY), () => new Array(maxX).fill(null));
+    const next = [[-1, 0], [0, 1], [1, 0], [0, -1]];
 
+    const q = [[0, 0]];
     distance[0][0] = 1;
 
-    while (q.length) {
+    while (q.length > 0) {
         let [y, x] = q.shift();
         visited[y][x] = true;
 
         for (let i = 0; i < 4; i++) {
-            let ny = y + 다[i];
-            let nx = x + 음[i];
+            let [ny, nx] = [y + next[i][0], x + next[i][1]];
 
             if (ny < 0 || ny >= maxY || nx < 0 || nx >= maxX) continue;
             if (maps[ny][nx] === 0) continue;
